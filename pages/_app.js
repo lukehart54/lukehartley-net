@@ -1,15 +1,7 @@
-import 'bulma/css/bulma.css';
-import Link from 'next/link';
+import '../styles/globals.css';
 
-function Index() {
-  return (
-    <section class="hero has-background-primary">
-      <div class="hero-body">
-        <p class="title">Luke Hartley</p>
-        <p class="subtitle">Welcome to My Website</p>
-      </div>
-    </section>
-  );
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
 }
 
-export default Index;
+export default MyApp;
