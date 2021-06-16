@@ -35,7 +35,7 @@ export default function Navbar() {
       >
         <div class="navbar-start">
           <a class="navbar-item">
-            <Link href="/home">Home</Link>
+            <Link href="/">Home</Link>
           </a>
           <a class="navbar-item">
             <Link href="/contact">Contact</Link>
