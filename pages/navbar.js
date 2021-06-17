@@ -5,11 +5,11 @@ import React, { useState } from 'react';
 export default function Navbar() {
   const [isActive, setisActive] = useState(false);
   return (
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav className="navbar" role="navigation" aria-label="main navigation">
       <script> </script>
-      <div class="navbar-brand">
+      <div className="navbar-brand">
         <a
-          class="navbar-item"
+          className="navbar-item"
           href="https://www.linkedin.com/in/luke-hartley7/"
         >
           <img src="/test.png" width="112" height="28" />
@@ -33,27 +33,32 @@ export default function Navbar() {
         id="navbarBasicExample"
         className={`navbar-menu${isActive ? 'is-active' : ''}`}
       >
-        <div class="navbar-start">
-          <a class="navbar-item">
-            <Link href="/">Home</Link>
+        <div className="navbar-start">
+          <a className="navbar-item" href="/">
+            Home
           </a>
-          <a class="navbar-item">
-            <Link href="/contact">Contact</Link>
-          </a>
-          <a class="navbar-item">
-            <Link href="https://github.com/lukehart54/lh-net-react">
-              Documentation
-            </Link>
-          </a>
-          <a class="navbar-item">
-            <Link href="/about">About</Link>
-          </a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">More</a>
 
-            <div class="navbar-dropdown">
-              <hr class="navbar-divider" />
-              <a class="navbar-item">Report an issue</a>
+          <a className="navbar-item" href="/about">
+            About
+          </a>
+
+          <a className="navbar-item" href="/contact">
+            Contact
+          </a>
+
+          <a
+            className="navbar-item"
+            href="https://github.com/lukehart54/lukehartley-net"
+          >
+            Documentation
+          </a>
+
+          <div className="navbar-item has-dropdown is-hoverable">
+            <a className="navbar-link">More</a>
+
+            <div className="navbar-dropdown">
+              <hr className="navbar-divider" />
+              <a className="navbar-item">Report an issue</a>
             </div>
           </div>
         </div>
