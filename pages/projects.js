@@ -4,25 +4,25 @@ import Footer from './components/footer.js';
 
 export default function Projects() {
   return (
-    <section className="hero is-fullheight">
+    <section className="hero is-fullheight is">
       <Navbar />
       <div className="hero-body has-background-primary has-text-centered">
         <div className="container has-text-centered">
-          <a href="/projects/lukeToken">
-            <figure
-              className="image is-inline-block is-clickable"
-              style={{ width: 500 }}
-            >
+          <figure
+            className="is-inline-block is-clickable"
+            style={{ width: 350 }}
+          >
+            <a href="/projects/lukeToken">
               <img href="/token" src="/LTResize.png"></img>
-            </figure>
-          </a>
-
-          <figure className="image is-inline-block" style={{ width: 400 }}>
-            <img className="image" src="/alukeChess-quickdraft.png"></img>
+            </a>
+          </figure>
+          <figure className="image is-inline-block" style={{ width: 300 }}>
+            <a>
+              <img className="image" src="/alukeChess-quickdraft.png"></img>
+            </a>
           </figure>
         </div>
       </div>
-
       <Footer />
     </section>
   );
