@@ -1,5 +1,4 @@
 import bulma from 'bulma/css/bulma.css';
-import Link from 'next/link';
 import React, { useState } from 'react';
 
 export default function Navbar() {
@@ -11,6 +10,7 @@ export default function Navbar() {
         <a
           className="navbar-item"
           href="https://www.linkedin.com/in/luke-hartley7/"
+          target="_blank"
         >
           <img src="/test.png" width="112" height="28" />
         </a>
@@ -49,8 +49,13 @@ export default function Navbar() {
           <a
             className="navbar-item"
             href="https://github.com/lukehart54/lukehartley-net"
+            target="_blank"
           >
             Documentation
+          </a>
+
+          <a className="navbar-item" href="/projects">
+            Projects
           </a>
 
           <div className="navbar-item has-dropdown is-hoverable">
@@ -58,7 +63,13 @@ export default function Navbar() {
 
             <div className="navbar-dropdown">
               <hr className="navbar-divider" />
-              <a className="navbar-item">Report an issue</a>
+              <a
+                className="navbar-item"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                target="_blank"
+              >
+                Report an issue
+              </a>
             </div>
           </div>
         </div>

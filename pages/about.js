@@ -1,5 +1,6 @@
 import bulma from 'bulma/css/bulma.css';
-import Navbar from './navbar.js';
+import Navbar from './components/navbar.js';
+import Footer from './components/footer.js';
 
 export default function About() {
   return (
@@ -10,29 +11,16 @@ export default function About() {
           <p className="title">About lukehartley.net</p>
           <p className="subtitle">
             This is a personal website intended to show off my abilities in
-            HTML, CSS, JS, Node.js, React, and Next.js
+            HTML, CSS, JS, Node.js, React, Next.js, and Solidity
           </p>
           <p className="subtitle">
-            I will also be uploading my personal projects such as, lukeCoin and
+            In addition, I will be uploading my personal projects such as,
+            <a href="https://github.com/lukehart54/lukeToken"> lukeToken</a> and
             lukeChess.
           </p>
         </div>
       </div>
-
-      <footer className="footer is-small">
-        <div className="content has-text-centered">
-          <p>
-            <strong>Personal Website</strong> by <a>Luke Hartley</a>. The source
-            code is licensed
-            <a href="http://opensource.org/licenses/mit-license.php"> MIT</a>.
-            The website content is licensed
-            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-              CC BY NC SA 4.0
-            </a>
-            .
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </section>
   );
 }
